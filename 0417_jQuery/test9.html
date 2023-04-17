@@ -12,13 +12,43 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
   <script>
     'use strict';
+    $(function() {
+      // $('div > span').css('color','orange');
+      $('div > span:first').css('color','orange');
+      $('div > span:first-child').css('color','red');
+      $('div > span:only-child').css('textDecoration','underline');
+      $('div > b:only-of-type').css('fontSize','25pt');
 
+    });
   </script>
 </head>
 <body>
 <p><br/></p>
 <div class="container">
-
+  <div>
+    <span>1.짜장면</span>
+    <span>1.짬뽕</span>
+    <span>1.탕수육</span>
+    <span>1.볶음밥</span>
+    <span>1.팔보채</span>
+  </div>
+  <div>
+    <span>2.짜장면</span>
+    <span>2.짬뽕</span>
+    <span>2.탕수육</span>
+    <span>2.볶음밥</span>
+    <span>2.팔보채</span>
+  </div>
+  <div>
+    <span>3.짜장면</span>
+  </div>
+  <div>
+    <span>4.짜장면</span>
+    <span>4.짬뽕</span>
+    <span>4.탕수육</span>
+    <b>4.볶음밥</b>
+    <span>4.팔보채</span>
+  </div>
 </div>
 <p><br/></p>
 </body>
